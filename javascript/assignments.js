@@ -2,7 +2,7 @@ export const assignments = [
   {
     id: "start",
     title: "Start",
-    link: "/index.html",
+    link: "/1me323-assignment/index.html",
     description: ""
   },
   {

@@ -5,7 +5,7 @@ export const produkter = [
   {
     id: 1,
     name: "Comfort 550B",
-    description: "En bekväm och stilren sneaker för vardagligt bruk.",
+    description: "En bekväm och stilren sneaker, perfekt för vardagsbruk.",
     price: 849,
     image: "img/sko1.jpg",
     category: "Sneakers",
@@ -14,7 +14,7 @@ export const produkter = [
   {
     id: 2,
     name: "Sportstreet Lows",
-    description: "Modern sneaker med flexibel sula och bra grepp.",
+    description: "Modern sneaker med flexibel sula och bra grepp och street design.",
     price: 1199,
     image: "img/sko2.jpg",
     category: "Sneakers",
@@ -23,25 +23,25 @@ export const produkter = [
   {
     id: 3,
     name: "SuperFly A11",
-    description: "Tidlös lädersko för både arbete och fritid.",
+    description: "Lätt och bekväm löparsko med bra dämpning perfekt för träning.",
     price: 1499,
     image: "img/sko3.jpg",
-    category: "Läderskor",
+    category: "Löparsko",
     stock: 0
   },
   {
     id: 4,
     name: "Comfort 480A",
-    description: "Perfekt för träning och löpning.",
+    description: "Stilren och bekväm sneaker med mjuk sula, perfekt för vardagen.",
     price: 1299,
     image: "img/sko4.jpg",
-    category: "Sport",
+    category: "Sneaker",
     stock: 4
   },
   {
     id: 5,
     name: "StableSole U1",
-    description: "Varm vinterkänga med extra grepp.",
+    description: "Bekväm vardagssneaker med stabil sula och stilren design.",
     price: 1799,
     image: "img/sko5.jpg",
     category: "Kängor",
@@ -50,28 +50,28 @@ export const produkter = [
   {
     id: 6,
     name: "UltraTREX",
-    description: "Lätt och bekväm promenadsko.",
+    description: "Lätt löparsko med bra dämpning och andningsbar ovandel.",
     price: 899,
     image: "img/sko6.jpg",
-    category: "Sneakers",
+    category: "Löparsko",
     stock: 6
   },
   {
     id: 7,
     name: "ComfortTREX",
-    description: "Robust vandringssko för tuff terräng.",
+    description: "Stabil trailsko med extra grepp för ojämnt underlag, perfekt för terräng.",
     price: 1999,
     image: "img/sko7.jpg",
-    category: "Vandring",
+    category: "Löparsko",
     stock: 3
   },
   {
     id: 8,
     name: "DailyMOVE A2",
-    description: "Enkel och bekväm vardagssko.",
+    description: "Klassisk canvas sneaker perfekt för stilren vardagsanvändning.",
     price: 799,
     image: "img/sko8.jpg",
-    category: "Vardag",
+    category: "Sneaker",
     stock: 5
   }
 ];

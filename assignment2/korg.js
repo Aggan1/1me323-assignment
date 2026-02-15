@@ -56,16 +56,15 @@ export function laggtill(produkt) {
 
     if (korg[i].produkt.id === produkt.id) {
 
-      // Kontrollera så att inte lagersaldot överskrids
+      // Öka kundvagns antalet men bara om det finns kvar i lager
       if (korg[i].antal < produkt.stock) {
         korg[i].antal++;
-      } else {
-        alert("Det finns inte fler i lager.");
       }
 
       finns = true;
     }
   }
+
 
   // Om produkten inte finns
   if (finns === false) {

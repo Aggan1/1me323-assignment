@@ -1,0 +1,156 @@
+
+/* layout för sidan och delarna (produkt och kundvagn) */
+.layout {
+  display: flex;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 40px;
+  padding: 0 20px;
+}
+
+/* Rubriker ovanför produktdelen */
+.uppgift2-sida {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 50px auto;
+}
+
+.uppgift2-sida h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #363434;
+}
+
+.uppgift2-sida h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #363434;
+}
+
+/* Produktdelen med skorna alltså vänstra delen av "griden" med produkterna och kundvagnen */
+.produkter {
+  width: 900px;
+}
+
+.produkt-del h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+  color: #363434;
+  font-weight: bold;
+}
+
+/* Containern för alla korten (produkterna) */
+#produkt-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+/* Produktkorten (för varje produkt) */
+.produkt-kort {
+  width: 380px;
+  background-color: #363434;
+  color: white;
+  padding: 20px;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.produkt-kort img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.produkt-kort h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.produkt-kort p {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.produkt-kort button {
+  margin-top: 15px;
+  background-color: #e8e3d7;
+  color: #363434;
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.produkt-kort button:hover {
+  background-color: #a6a298;
+}
+
+/* Lagersaldo & kategori css (om de är slut röd text) */
+.finns {
+  color: #4CAF50;
+  font-weight: bold;
+}
+
+.slut {
+  color: #d32f2f;
+  font-weight: bold;
+}
+
+.kategori {
+  display: inline-block;
+  background-color: #ad694b;
+  color: #ffffff;
+  padding: 2px 8px;
+  border-radius: 20px;   /* gör den rund → piller */
+  font-size: 11px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Kundvagsdelen */
+.korg-del {
+  width: 300px;
+  background-color: #363434;
+  padding: 20px;
+  border-radius: 16px;
+  color: white;
+  align-self: flex-start;
+  text-align: center;
+}
+
+.korg-del h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+#kundvagnen {
+  margin-bottom: 15px;
+}
+
+#summa {
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+#empty-korgen {
+  width: 100%;
+  background-color: #e8e3d7;
+  color: #363434;
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#empty-korgen:hover {
+  background-color: #a6a298;
+}

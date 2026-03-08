@@ -1,0 +1,113 @@
+/* Rubriker ovanför turneringsdelen */
+.uppgift3-sida {
+  text-align: center;
+}
+
+.uppgift3-sida h2 {
+  text-align: center;
+  font-size: 30px;
+  color: #363434;
+  font-weight: bold;
+}
+
+.uppgift3-sida h3 {
+  text-align: center;
+  font-size: 20px;
+  color: #363434;
+  font-weight: bold;
+  margin-bottom: 0.7rem;
+}
+
+/* Knappar ovanför bracket-delen */
+.knappar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0.8rem;
+}
+
+.knappar button {
+  background-color: #363434;
+  color: #e8e3d7;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.knappar button:hover {
+  background-color: #626060;
+}
+
+.knappar button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+/* Turneringsdelen */
+.turnering {
+  margin-top: 0.5rem;
+}
+
+.bracket {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+/* Rundor */
+.round {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  min-width: 240px;
+}
+
+.round h4 {
+  text-align: center;
+  color: #a85b45;
+  font-size: 16px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+/* Korten för matcherna */
+.match {
+  background-color: #f5efe6;
+  border: 1px solid #d6c9bb;
+  border-radius: 10px;
+  padding: 0.6rem;
+  font-size: 14px;
+}
+
+.player {
+  padding: 0.45rem;
+  border-radius: 8px;
+  background-color: #ffffff;
+  border: 1px solid #e2d6c8;
+}
+
+.player p {
+  margin: 0.1rem 0;
+}
+
+.vs {
+  text-align: center;
+  font-weight: bold;
+  color: #a85b45;
+  margin: 0.35rem 0;
+}
+
+/* Vinnare och förlorare */
+.vinnare {
+  background-color: #e8f3ea;
+  border-color: #b7d7bf;
+}
+
+.forlorare {
+  opacity: 0.5;
+}

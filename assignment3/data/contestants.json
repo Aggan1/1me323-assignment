@@ -1,0 +1,58 @@
+[
+  {
+    "id": "h-001",
+    "name": "Turbo-Tansen",
+    "image": "images/tansen.jpg",
+    "skillLevel": 6,
+    "catchphrase": "Hann du blinka? Tråkigt, du missade mig."
+  },
+  {
+    "id": "h-002",
+    "name": "Bulldåsen Bansen",
+    "image": "images/bansen.jpg",
+    "skillLevel": 7,
+    "catchphrase": "Jag flyttar mig inte."
+  },
+  {
+    "id": "h-003",
+    "name": "Professor Plutten",
+    "image": "images/plutten.jpg",
+    "skillLevel": 6,
+    "catchphrase": "Jag visste att du skulle göra det där."
+  },
+  {
+    "id": "h-004",
+    "name": "Smansen Smansen",
+    "image": "images/smansen.jpg",
+    "skillLevel": 7,
+    "catchphrase": null
+  },
+  {
+    "id": "h-005",
+    "name": "Pansen Pansen",
+    "image": "images/pansen.jpg",
+    "skillLevel": 7,
+    "catchphrase": "BOLL! BOLL! BOLL!"
+  },
+  {
+    "id": "h-006",
+    "name": "Herr Skansen",
+    "image": "images/skansen.jpg",
+    "skillLevel": 8,
+    "catchphrase": "Jag kommer fram när jag kommer fram."
+  },
+  {
+    "id": "h-007",
+    "name": "Ansen Kanansen",
+    "image": "images/kanansen.jpg",
+    "skillLevel": 5,
+    "catchphrase": "Hopp hopp!"
+  },
+  {
+    "id": "h-008",
+    "name": "Mystansen",
+    "image": "images/mystansen.jpg",
+    "skillLevel": 4,
+    "catchphrase": "..."
+  }
+]

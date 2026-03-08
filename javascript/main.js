@@ -15,6 +15,10 @@ if (window.location.pathname.includes("assignment2")) {
   aktuellSida = "assignment2";
 }
 
+if (window.location.pathname.includes("assignment3")) {
+  aktuellSida = "assignment3";
+}
+
 if (navlist) {
   createNavigation(assignments, navlist, aktuellSida);
 }

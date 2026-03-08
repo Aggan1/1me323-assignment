@@ -16,5 +16,11 @@ export const assignments = [
     title: "Uppgift 2",
     link: "assignment2/index.html",
     description: "Produktsida med kundvagn, lagersaldo och sparad genom localstorage (JSON)."
+  },
+    {
+    id: "assignment3",
+    title: "Uppgift 3",
+    link: "assignment3/index.html",
+    description: "Turneringsgenerator som hämtar deltagare från JSON."
   }
 ];

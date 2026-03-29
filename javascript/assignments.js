@@ -22,5 +22,11 @@ export const assignments = [
     title: "Uppgift 3",
     link: "assignment3/index.html",
     description: "Turneringsgenerator som hämtar deltagare från JSON."
+  },
+    {
+    id: "assignment4",
+    title: "Uppgift 4",
+    link: "assignment4/index.html",
+    description: "Webbplats med filtrering av spökhus, detaljsida, bokningsformulär och karta via API."
   }
 ];

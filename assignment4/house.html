@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spökhusbyrån – Hus</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script type="module" src="./js/house.js"></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <h1>Spökhusbyrån AB</h1>
+    </header>
+
+    <nav class="navigation">
+        <ul>
+            <li><a href="index.html">Gå tillbaka till översikt</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section id="error-section"></section>
+
+        <section id="house-details" class="house-details"></section>
+
+        <section class="house-bottom-layout">
+            <section class="booking-section">
+                <h2>Boka vistelse</h2>
+
+                <form id="booking-form">
+                    <div class="form-rad">
+                        <label for="check-in">Incheckningsdatum</label>
+                        <input type="date" id="check-in" name="check-in" required>
+                    </div>
+
+                    <div class="form-rad">
+                        <label for="days">Antal dagar</label>
+                        <input type="number" id="days" name="days" min="1" value="1" required>
+                    </div>
+
+                    <fieldset class="extras-fieldset">
+                        <legend>Välj tillägg</legend>
+
+                        <div class="checkbox-rad booking-checkbox-rad">
+                            <input type="checkbox" id="breakfast" name="breakfast">
+                            <label for="breakfast">Frukost (100 kr/dag)</label>
+                        </div>
+
+                        <div class="checkbox-rad booking-checkbox-rad">
+                            <input type="checkbox" id="ghost-tour" name="ghost-tour">
+                            <label for="ghost-tour">Spökvandring (300 kr)</label>
+                        </div>
+
+                        <div class="checkbox-rad booking-checkbox-rad">
+                            <input type="checkbox" id="seance" name="seance">
+                            <label for="seance">Nattlig seans (500 kr)</label>
+                        </div>
+                    </fieldset>
+
+                    <div class="form-rad">
+                        <label for="discount-code">Rabattkod</label>
+                        <input type="text" id="discount-code" name="discount-code" placeholder="t.ex. SCARY20">
+                    </div>
+
+                    <div class="price-box">
+                        <p>Nätter: <span id="booking-nights">1 X 0 KR</span></p>
+                        <p>Tillägg: <span id="booking-extras">Inga tillägg</span></p>
+                        <p>Rabatt: <span id="booking-discount">Ingen rabatt</span></p>
+                        <p class="total-line">TOTAL KOSTNAD: <span id="total-price">0 KR</span></p>
+                    </div>
+
+                    <button type="submit">Boka</button>
+                </form>
+
+                <div id="booking-message"></div>
+            </section>
+
+            <section class="map-section">
+                <h2>Var ligger huset?</h2>
+                <div id="map"></div>
+            </section>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>Spökhusbyrån AB</p>
+    </footer>
+
+</body>
+
+</html>

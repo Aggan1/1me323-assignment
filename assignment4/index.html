@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spökhusbyrån</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="module" src="./js/index.js"></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <h1>Spökhusbyrån AB</h1>
+    </header>
+
+    <nav class="navigation">
+        <ul>
+            <li><a href="#">Översikt</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section class="filter-del">
+            <form id="filter-form">
+
+                <div class="form-rad">
+                    <label for="max-price">Maxpris per natt:
+                        <span id="max-price-value">Inget valt</span>
+                    </label>
+                    <input type="range" id="max-price" min="0" max="3000" step="50" value="0">
+                </div>
+
+                <div class="form-rad">
+                    <label for="scare-level">Lägsta skräcknivå:
+                        <span id="scare-level-value">Inget valt</span>
+                    </label>
+                    <input type="range" id="scare-level" min="0" max="5" value="0">
+                </div>
+
+                <div class="form-rad">
+                    <label for="ghost-type">Typ av spöke</label>
+                    <select id="ghost-type">
+                        <option value="all">Alla typer</option>
+                    </select>
+                </div>
+
+                <div class="checkbox-rad">
+                    <input type="checkbox" id="wifi">
+                    <label for="wifi">WiFi-krav</label>
+                </div>
+
+            </form>
+        </section>
+
+        <section id="message"></section>
+
+        <section id="houses-container" class="houses-container"></section>
+
+    </main>
+
+    <footer class="footer">
+        <p>Spökhusbyrån AB</p>
+    </footer>
+
+</body>
+
+</html>

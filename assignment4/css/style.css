@@ -1,0 +1,348 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(to bottom, #0f0b14 0%, #19111f 35%, #241729 100%);
+  color: #f2e9e4;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+/* Header högst upp på sidorna */
+.header {
+  background: linear-gradient(to bottom, #1a0f1f 0%, #120a16 100%);
+  border-bottom: 1px solid #4a243f;
+  padding: 1.7rem;
+  text-align: center;
+}
+
+.header h1 {
+  color: #f6d6e7;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+.header h3 {
+  color: #c6a6b8;
+  font-size: 1rem;
+  font-weight: normal;
+  margin-top: 0.3rem;
+}
+
+/* Navigationen */
+.navigation {
+  background-color: #140d18;
+  border-bottom: 1px solid #3a2030;
+}
+
+.navigation ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  padding: 0.8rem 1.5rem;
+}
+
+.navigation a {
+  color: #f6d6e7;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.45rem 0.9rem;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+.navigation a:hover {
+  background-color: #462437;
+  color: #ffffff;
+}
+
+/* Huvudinnehållet på sidan */
+main {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem 2rem;
+}
+
+/* Filterdel */
+.filter-del {
+  max-width: 500px;
+  margin: 0 auto 2rem;
+  background-color: rgba(35, 22, 39, 0.95);
+  border: 1px solid #4a243f;
+  border-radius: 12px;
+  padding: 1.4rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+}
+
+#filter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+/* Vanliga formulärrader */
+.form-rad {
+  max-width: 500px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.form-rad label,
+.extras-fieldset legend {
+  font-weight: bold;
+  color: #f6d6e7;
+  margin-bottom: 0.35rem;
+  display: block;
+}
+
+.form-rad input,
+.form-rad select {
+  width: 100%;
+  padding: 0.65rem;
+  border: 1px solid #5a3248;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #1d1321;
+  color: #f2e9e4;
+}
+
+.form-rad input[type="range"] {
+  width: 100%;
+  padding: 0;
+  accent-color: #8f2f5a;
+}
+
+.form-rad select {
+  cursor: pointer;
+}
+
+/* wifi och tillägg */
+.checkbox-rad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.55rem;
+  color: #f2e9e4;
+}
+
+.checkbox-rad input {
+  width: auto;
+}
+
+.booking-checkbox-rad {
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 0.6rem;
+}
+
+/* Tilläggruta */
+.extras-fieldset {
+  border: 1px solid #5a3248;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: rgba(20, 12, 24, 0.6);
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+/* Knappar */
+button,
+.house a {
+  background-color: #6b1f44;
+  color: #f7edf2;
+  padding: 0.7rem 1.4rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover,
+.house a:hover {
+  background-color: #8f2f5a;
+}
+
+.booking-section button {
+  display: block;
+  margin-top: 1rem;
+  max-width: 500px;
+  width: 100%;
+}
+
+/* Husen på översiktssidan */
+.houses-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.house {
+  background-color: rgba(35, 22, 39, 0.95);
+  border: 1px solid #4a243f;
+  border-radius: 12px;
+  padding: 1rem;
+  width: 320px;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.2);
+}
+
+.house img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 0.8rem;
+  border: 1px solid #5a3248;
+}
+
+.house h3 {
+  margin-bottom: 0.4rem;
+  color: #f6d6e7;
+}
+
+.house p {
+  margin-bottom: 0.4rem;
+  color: #e7dbe2;
+}
+
+.house a {
+  display: inline-block;
+  margin-top: 0.6rem;
+  text-decoration: none;
+}
+
+/* Rutan med bild på hussidan */
+.house-details {
+  background-color: rgba(35, 22, 39, 0.95);
+  border: 1px solid #4a243f;
+  border-radius: 12px;
+  padding: 1.4rem;
+  margin: 0 auto 1.8rem;
+  max-width: 700px;
+  text-align: center;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.2);
+}
+
+.house-details img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  display: block;
+  margin: 0 auto 1rem;
+  border-radius: 12px;
+  border: 1px solid #5a3248;
+}
+
+.house-details h2 {
+  color: #f6d6e7;
+  margin-bottom: 0.8rem;
+}
+
+.house-details p {
+  margin-bottom: 0.5rem;
+  color: #e7dbe2;
+}
+
+/* Bokning och kartadel */
+.house-bottom-layout {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.booking-section,
+.map-section {
+  background-color: rgba(35, 22, 39, 0.95);
+  border: 1px solid #4a243f;
+  border-radius: 12px;
+  padding: 1.2rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.2);
+  flex: 1;
+}
+
+.booking-section h2,
+.map-section h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #f6d6e7;
+}
+
+.price-box {
+  margin: 1rem auto;
+  font-weight: normal;
+  color: #f6d6e7;
+  max-width: 500px;
+  width: 100%;
+}
+
+.price-box p {
+  margin-bottom: 0.5rem;
+}
+
+.total-line {
+  font-weight: bold;
+  margin-top: 0.7rem;
+  font-size: 1.05rem;
+}
+
+/* Meddelanden */
+#error-section,
+#message,
+#booking-message {
+  margin-bottom: 1rem;
+}
+
+.error-message {
+  background-color: #3b1118;
+  color: #ffd3da;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #8b3a4c;
+}
+
+.success-message {
+  background-color: #163124;
+  color: #d7ffe8;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #3c7a59;
+}
+
+/* Karta och platsinformation */
+#map {
+  width: 100%;
+  height: 350px;
+  border-radius: 12px;
+  border: 1px solid #5a3248;
+}
+
+.map-info {
+  background-color: rgba(35, 22, 39, 0.95);
+  border: 1px solid #4a243f;
+  border-radius: 12px;
+  padding: 1rem;
+  margin-top: 1rem;
+  color: #f2e9e4;
+}
+
+.map-info p {
+  margin-bottom: 0.35rem;
+}
+
+/* Footern */
+.footer {
+  background-color: #120a16;
+  color: #f6d6e7;
+  text-align: center;
+  padding: 1.5rem;
+  border-top: 1px solid #3a2030;
+}
